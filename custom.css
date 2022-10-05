@@ -1,0 +1,9 @@
+@import url("style.css");
+/* Use this file to override default styling and redeclare variables */
+:root {
+  /* Override Secondary color to choose custom secondary/accent color */
+  --theme-secondary-h: 204;
+  --theme-secondary-s: 78%;
+  --theme-secondary-l: 50%;
+  --theme-secondary-a: 100%;
+}

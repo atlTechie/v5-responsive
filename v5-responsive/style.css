@@ -1,0 +1,316 @@
+:root {
+  /* Colors */
+  /* It's recommended to convert colors to hsl and updating the values below. DO NOT reassign color variables as this will yield unexpected results throughout the application. */
+  --theme-primary-h: 266;
+  --theme-primary-s: 67%;
+  --theme-primary-l: 55%;
+  --theme-primary-a: 100%;
+
+  --theme-color-primary: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    var(--theme-primary-l),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-d-5: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) * 0.1),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-d-4: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) * 0.2),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-d-3: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) * 0.3),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-d-2: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) * 0.4),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-d-1: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) * 0.5),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-l-1: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) / 0.9),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-l-2: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) / 0.8),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-l-3: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) / 0.7),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-l-4: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) / 0.6),
+    var(--theme-primary-a)
+  );
+  --theme-color-primary-l-5: hsla(
+    var(--theme-primary-h),
+    var(--theme-primary-s),
+    calc(var(--theme-primary-l) / 0.5),
+    var(--theme-primary-a)
+  );
+
+  /* Auto-generate secondary theme color */
+  /* If necessary, override the 'theme-secondary-* values in custom.css.  */
+  --theme-secondary-h: calc(var(--theme-primary-h) + 180);
+  --theme-secondary-s: var(--theme-primary-s);
+  --theme-secondary-l: var(--theme-primary-l);
+  --theme-secondary-a: var(--theme-primary-a);
+
+  --theme-color-secondary: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    var(--theme-secondary-l),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-d-5: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) * 0.1),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-d-4: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) * 0.2),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-d-3: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) * 0.3),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-d-2: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) * 0.4),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-d-1: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) * 0.5),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-l-1: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) / 0.9),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-l-2: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) / 0.8),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-l-3: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) / 0.7),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-l-4: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) / 0.6),
+    var(--theme-secondary-a)
+  );
+  --theme-color-secondary-l-5: hsla(
+    var(--theme-secondary-h),
+    var(--theme-secondary-s),
+    calc(var(--theme-secondary-l) / 0.5),
+    var(--theme-secondary-a)
+  );
+
+  --white: #fff;
+
+  /* Fonts */
+
+  --ff-primary: "Inter Tight", Arial, sans-serif;
+  --ff-display: var(--ff-primary);
+  --fs-headline: 2.5rem;
+  --fs-h2: 2rem;
+  --fs-byline: 1.5625rem;
+  --fs-lead: 1.25rem;
+  --fs-reg: 1rem;
+
+  /* Images */
+  --page-login-bg: ;
+  --img-project-1: url("images/project-img.jpg");
+
+  /* Utilities */
+  /* Adjust this to be the max-width of container. */
+  --container-max-width: 71.25rem;
+  /* Adjusts default left AND right padding */
+  --container-padding-inline: 1rem;
+}
+
+/*---------------------------------------------------------------------------------------- 
+GLOBAL DEFAULTS 
+----------------------------------------------------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: var(--ff-primary);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: auto;
+  background: grey;
+  padding-inline: var(--container-padding-inline);
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.swatch {
+  height: 50px;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+
+.swatch-primary,
+.swatch-secondary {
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+
+.swatch-primary {
+  background: var(--theme-color-primary);
+}
+
+.swatch-secondary {
+  background: var(--theme-color-secondary);
+}
+
+.swatch-primary-l-1 {
+  background: var(--theme-color-primary-l-1);
+}
+.swatch-primary-l-2 {
+  background: var(--theme-color-primary-l-2);
+}
+.swatch-primary-l-3 {
+  background: var(--theme-color-primary-l-3);
+}
+.swatch-primary-l-4 {
+  background: var(--theme-color-primary-l-4);
+}
+.swatch-primary-l-5 {
+  background: var(--theme-color-primary-l-5);
+}
+
+.swatch-secondary-l-1 {
+  background: var(--theme-color-secondary-l-1);
+}
+.swatch-secondary-l-2 {
+  background: var(--theme-color-secondary-l-2);
+}
+.swatch-secondary-l-3 {
+  background: var(--theme-color-secondary-l-3);
+}
+.swatch-secondary-l-4 {
+  background: var(--theme-color-secondary-l-4);
+}
+.swatch-secondary-l-5 {
+  background: var(--theme-color-secondary-l-5);
+}
+
+.swatch-primary-l-1,
+.swatch-primary-l-2,
+.swatch-primary-l-3,
+.swatch-primary-l-4,
+.swatch-primary-l-5 {
+  color: var(--theme-color-primary-d-5);
+}
+.swatch-secondary-l-1,
+.swatch-secondary-l-2,
+.swatch-secondary-l-3,
+.swatch-secondary-l-4,
+.swatch-secondary-l-5 {
+  color: var(--theme-color-secondary-d-5);
+}
+
+.swatch-primary-d-1,
+.swatch-primary-d-2,
+.swatch-primary-d-3,
+.swatch-primary-d-4,
+.swatch-primary-d-5 {
+  color: var(--theme-color-primary-l-5);
+}
+
+.swatch-secondary-d-1,
+.swatch-secondary-d-2,
+.swatch-secondary-d-3,
+.swatch-secondary-d-4,
+.swatch-secondary-d-5 {
+  color: var(--theme-color-secondary-l-5);
+}
+.swatch-primary-d-1 {
+  background: var(--theme-color-primary-d-1);
+}
+.swatch-primary-d-2 {
+  background: var(--theme-color-primary-d-2);
+}
+.swatch-primary-d-3 {
+  background: var(--theme-color-primary-d-3);
+}
+.swatch-primary-d-4 {
+  background: var(--theme-color-primary-d-4);
+}
+.swatch-primary-d-5 {
+  background: var(--theme-color-primary-d-5);
+}
+.swatch-secondary-d-1 {
+  background: var(--theme-color-secondary-d-1);
+}
+.swatch-secondary-d-2 {
+  background: var(--theme-color-secondary-d-2);
+}
+.swatch-secondary-d-3 {
+  background: var(--theme-color-secondary-d-3);
+}
+.swatch-secondary-d-4 {
+  background: var(--theme-color-secondary-d-4);
+}
+.swatch-secondary-d-5 {
+  background: var(--theme-color-secondary-d-5);
+}
